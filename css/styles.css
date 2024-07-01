@@ -1,0 +1,56 @@
+body {
+   font-family: Verdana;
+   background-color: rgb(189, 189, 189);
+   font-size: 30px;
+}
+
+div {
+   padding: 20px;
+   background-color: rgb(66, 66, 66);
+
+}
+
+.courses {
+   padding: 10px;
+   background-color: rgb(239, 239, 239);
+   margin: 0px 0px 20px;
+}
+
+h1 {
+   text-align: center;
+   font-size: 25px;
+   color: white;
+}
+
+h2 {
+   font-size: 20px;
+}
+
+p {
+   font-size: 16px;
+   font-weight: bold;
+}
+
+button {
+   color: white;
+   background-color: green;
+   padding: 10px;
+   border-radius: 6px;
+}
+
+button:active {
+   background-color: rgb(27, 94, 32);
+}
+
+.about_course {
+   font-size: 14px;
+   font-weight: normal;
+}
+
+#layer_bott {
+   padding: 10px;
+   color: white;
+   text-align: center;
+   font-size: 14px;
+   font-weight: bold;
+}
