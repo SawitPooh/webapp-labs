@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Verdana;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #e8eaf6;
+}
+
+header {
+    padding: 15px;
+    background-color: #2cd053;
+    font: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+    margin: 0;
+}
+
+nav li a {
+    display: inline;
+    padding: 8px;
+    background-color: #2cd053;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    padding: 2px;
+}
+
+.nav_item {
+    display: flex;
+}
+
+nav {
+    padding: 15px;
+    background-color: #2cd053;
+    font: 10px;
+    margin: 0;
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    background-image: url("https://via.placeholder.com/1500x600");
+    background-position: top;
+    background-size: contain;
+    height: 300px;
+}
+
+
+
+#featured-products {
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 15px;
+    width: 300px;
+    height: 200px;
+
+}
+
+.product-grid {
+    display: grid;
+    gap: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 10px;
+
+}
+
+.product {
+
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 10px;
+    text-align: center;
+}
+
+.button {
+    background-color: #04AA6D;
+    /* Green */
+    color: white;
+    position: absolute;
+    bottom: 400px;
+    right: 750px;
+}
+
+
+.img_product {
+    width: 345px;
+    height: 200px;
+}
+
+.product_descript {
+    background-color: #fafafa;
+
+}
+
+.white_bg {
+    background-color: #fafafa;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+@media(width > 820px) {
+    .product-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+}
+
+@media(375px < width <=820px) {
+
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #featured-products {
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-right: 15px;
+
+    }
+}
+
+@media(width <=376px) {
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #featured-products {
+        margin-top: 5px;
+        margin-left: 5px;
+
+
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+}
