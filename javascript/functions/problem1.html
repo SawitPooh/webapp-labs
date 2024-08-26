@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam14_Prob1</title>
+</head>
+
+<body>
+    <h2>Find the Larger Numbers</h2>
+    <p>Enter two numbers to see which is larger</p>
+    <script>
+        num1 = prompt("Enter first number");
+        num11 = Number(num1);
+        num2 = prompt("Enter second number");
+        num22 = Number(num2);
+        let chck_larger = function findLarger(a, b) {
+            if (a > b) {
+                return a
+            } else if (a < b) {
+                return b
+            }
+        }
+        isNaN(num11) || isNaN(num22) ? document.write("Please enter valid numbers.") : document.write("The large number between " + num1 + " and " + num2 + " is: " + chck_larger(num1, num2));
+    </script>
+</body>
