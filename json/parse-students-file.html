@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prob1</title>
+</head>
+
+<body>
+    <h2>Reading Student Information</h2>
+    <div id="resultss"></div>
+    <script>
+        fetch('file/students.json').then(response => {
+            return response.json();
+        }).then(data => {
+            student = data.wclass;
+            let res = "<ol>";
+            for (let result of student) {
+                res +=
+                    "<li>" + result.student["@attributes"].id + " " + "<b>" + result.student.name + "</b>" + " has skills " + "<i> " + result.student.skill + "</i>" + "</li>"
+
+            }
+            document.getElementById("resultss").innerHTML = res;
+        }).catch((error) =>
+            console.error("Unable to fetch data:", error));
+    </script>
+</body>
+
+</html>
